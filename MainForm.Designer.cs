@@ -1,4 +1,4 @@
-﻿namespace MunicipalServicesApp
+namespace MunicipalServicesApp
 {
     partial class MainForm
     {
@@ -71,7 +71,6 @@
             // 
             // btnEvents
             // 
-            btnEvents.Enabled = false;
             btnEvents.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
             btnEvents.Location = new Point(422, 151);
             btnEvents.Name = "btnEvents";
@@ -79,6 +78,7 @@
             btnEvents.TabIndex = 3;
             btnEvents.Text = "Local Events and Announcements";
             btnEvents.UseVisualStyleBackColor = true;
+            btnEvents.Click += btnEvents_Click;
             // 
             // btnStatus
             // 
