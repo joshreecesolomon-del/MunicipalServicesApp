@@ -1,4 +1,4 @@
-namespace MunicipalServicesApp
+﻿namespace MunicipalServicesApp
 {
     partial class MainForm
     {
@@ -82,7 +82,7 @@ namespace MunicipalServicesApp
             // 
             // btnStatus
             // 
-            btnStatus.Enabled = false;
+            btnStatus.Enabled = true;
             btnStatus.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
             btnStatus.Location = new Point(252, 181);
             btnStatus.Name = "btnStatus";
@@ -90,6 +90,7 @@ namespace MunicipalServicesApp
             btnStatus.TabIndex = 4;
             btnStatus.Text = "Service Request Status";
             btnStatus.UseVisualStyleBackColor = true;
+            btnStatus.Click += btnStatus_Click;
             // 
             // btnExit
             // 

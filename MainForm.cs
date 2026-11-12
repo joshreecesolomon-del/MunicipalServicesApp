@@ -35,5 +35,13 @@ namespace MunicipalServicesApp
 
             eventsForm.ShowDialog();
         }
+
+        private void btnStatus_Click(object sender, EventArgs e)
+        {
+            ServiceRequestStatusForm statusForm =
+                new ServiceRequestStatusForm();
+
+            statusForm.ShowDialog();
+        }
     }
 }

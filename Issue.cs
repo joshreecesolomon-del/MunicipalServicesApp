@@ -8,6 +8,9 @@ namespace MunicipalServicesApp
 {
     public class Issue
     {
+        public string RequestId { get; set; } =
+                    Guid.NewGuid().ToString("N").Substring(0, 8).ToUpper();
+
         public string Location { get; set; }
 
         public string Category { get; set; }
@@ -17,5 +20,7 @@ namespace MunicipalServicesApp
         public string Attachment { get; set; }
 
         public DateTime DateReported { get; set; }
+
+        public string Status { get; set; } = "Submitted";
     }
 }
